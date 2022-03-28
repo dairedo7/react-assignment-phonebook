@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/react-homework-template/static/css/main.7acaea2f.css",
-    "main.js": "/react-homework-template/static/js/main.4c9e2a57.js",
-    "static/js/787.6b7abe35.chunk.js": "/react-homework-template/static/js/787.6b7abe35.chunk.js",
-    "index.html": "/react-homework-template/index.html",
-    "main.7acaea2f.css.map": "/react-homework-template/static/css/main.7acaea2f.css.map",
-    "main.4c9e2a57.js.map": "/react-homework-template/static/js/main.4c9e2a57.js.map",
-    "787.6b7abe35.chunk.js.map": "/react-homework-template/static/js/787.6b7abe35.chunk.js.map"
+    "main.css": "/react-assignment-phonebook/static/css/main.1c5f315f.css",
+    "main.js": "/react-assignment-phonebook/static/js/main.bba03118.js",
+    "static/js/787.4bcc50af.chunk.js": "/react-assignment-phonebook/static/js/787.4bcc50af.chunk.js",
+    "index.html": "/react-assignment-phonebook/index.html",
+    "main.1c5f315f.css.map": "/react-assignment-phonebook/static/css/main.1c5f315f.css.map",
+    "main.bba03118.js.map": "/react-assignment-phonebook/static/js/main.bba03118.js.map",
+    "787.4bcc50af.chunk.js.map": "/react-assignment-phonebook/static/js/787.4bcc50af.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7acaea2f.css",
-    "static/js/main.4c9e2a57.js"
+    "static/css/main.1c5f315f.css",
+    "static/js/main.bba03118.js"
   ]
 }
