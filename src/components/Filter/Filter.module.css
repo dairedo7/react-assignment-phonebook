@@ -1,0 +1,10 @@
+.filter__field {
+    border: 1px solid grey;
+    outline: none;
+
+    padding: 5px;
+}
+
+.filter__field:focus {
+    border: 2px solid rgb(21, 75, 223);
+}

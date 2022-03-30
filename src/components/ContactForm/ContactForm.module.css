@@ -1,0 +1,44 @@
+.form {
+    display: flex;
+    flex-direction: column;
+
+    width: 250px;
+    padding: 5px 30px 5px 5px;
+    border: 1px solid #000;
+}
+
+.submit__btn {
+    margin-right: auto;
+    background-color: transparent;
+    color: #000;
+    border: 1px solid grey;
+    border-radius: 5%;
+    padding: 5px;
+
+    transition-property: background, color;
+    transition-timing-function: cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    transition-duration: 350ms;
+    cursor: pointer;
+}
+
+.submit__btn:hover {
+    color: #fff;
+    background-color: rgb(21, 75, 223)
+}
+
+.label {
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.form__field {
+    width: 70%;
+    margin-bottom: 15px;
+    outline: none;
+}
+
+.form__field:focus {
+    border: 2px solid rgb(21, 75, 223);
+}
+
