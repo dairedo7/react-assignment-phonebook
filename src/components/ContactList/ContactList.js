@@ -10,14 +10,20 @@ class ContactList extends Component {
 
   render() {
     const { contacts, nameToFilter, deleteContact } = this.props;
-    
+
     return (
       <ul className={styles.list}>
         {contacts
-          .filter(({name}) => name.toLowerCase().includes(nameToFilter.toLowerCase()))
+          .filter(({ name }) =>
+            name.toLowerCase().includes(nameToFilter.toLowerCase())
+          )
           .map(contact => {
             return (
-              <ContactItem contact={contact} key={contact.name} deleteContact={deleteContact} />
+              <ContactItem
+                contact={contact}
+                key={contact.name}
+                deleteContact={deleteContact}
+              />
             );
           })}
       </ul>

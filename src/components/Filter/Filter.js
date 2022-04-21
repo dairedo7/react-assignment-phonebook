@@ -13,7 +13,7 @@ class Filter extends Component {
     console.log(value);
 
     this.props.updateFilter(value);
-  }
+  };
 
   render() {
     const { nameToFilter } = this.props;

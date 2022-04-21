@@ -20,7 +20,10 @@ class ContactItem extends Component {
         <span className={styles.contact__text}>
           {name}: {number}
         </span>
-        <button className={styles.delete__btn} onClick={() => deleteContact(id)}>
+        <button
+          className={styles.delete__btn}
+          onClick={() => deleteContact(id)}
+        >
           Delete
         </button>
       </li>
