@@ -17,7 +17,6 @@ class ContactForm extends Component {
     const { name, value } = target;
 
     this.setState({ [name]: value });
-    console.log({ [name]: value });
   };
 
   handleSubmit = evt => {
