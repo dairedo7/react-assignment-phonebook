@@ -22,7 +22,6 @@ export class App extends Component {
   componentDidUpdate(prevProps, prevState) {
     const { contacts } = this.state;
     if (prevState.contacts !== contacts) {
-      console.log('The contacts have been updated!');
       localStorage.setItem('contacts', JSON.stringify(contacts));
     }
   }
@@ -47,7 +46,6 @@ export class App extends Component {
       return alert(`${name} is already in contacts list!`);
     } else {
       this.setState(prevState => {
-        console.log(prevState.contacts);
         return {
           contacts: [...contacts, { id: nanoid(), name, number }],
         };
