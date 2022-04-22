@@ -10,7 +10,6 @@ class Filter extends Component {
 
   handleChange = ({ target }) => {
     const { value } = target;
-    console.log(value);
 
     this.props.updateFilter(value);
   };
