@@ -57,8 +57,16 @@ export class App extends Component {
     this.setState({ filter: value });
   };
 
+  filterArr = arrayToFilter => {
+    const { filter } = this.state;
+    return arrayToFilter.filter(({ name }) =>
+      name.toLowerCase().includes(filter.toLowerCase())
+    );
+  };
+
   render() {
     const { contacts, filter } = this.state;
+    const { updateContacts, updateFilter, filterArr, deleteContact } = this;
 
     return (
       <>
@@ -72,14 +80,14 @@ export class App extends Component {
         </div>
         <div className="phonebook__container">
           <h1 className="phonebook__title">Phonebook</h1>
-          <ContactForm changeContactsState={this.updateContacts} />
+          <ContactForm changeContactsState={updateContacts} />
 
           <h2 className="contacts__title">Contacts</h2>
-          <Filter nameToFilter={filter} updateFilter={this.updateFilter} />
+          <Filter nameToFilter={filter} updateFilter={updateFilter} />
           <ContactList
-            contacts={contacts}
+            contacts={filterArr(contacts)}
             nameToFilter={filter}
-            deleteContact={this.deleteContact}
+            deleteContact={deleteContact}
           />
         </div>
       </>
