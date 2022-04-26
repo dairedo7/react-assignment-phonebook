@@ -86,7 +86,6 @@ export class App extends Component {
           <Filter nameToFilter={filter} updateFilter={updateFilter} />
           <ContactList
             contacts={filterArr(contacts)}
-            nameToFilter={filter}
             deleteContact={deleteContact}
           />
         </div>
