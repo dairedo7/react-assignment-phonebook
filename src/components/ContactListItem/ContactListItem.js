@@ -14,10 +14,11 @@ export default function ContactItem({ contact, deleteContact }) {
   );
 }
 
-ContactItem.prtopTypes = {
+ContactItem.propTypes = {
   contact: PropTypes.shape({
     name: PropTypes.string.isRequired,
-    id: PropTypes.number.isRequired,
-    number: PropTypes.number.isRequired,
+    id: PropTypes.string.isRequired,
+    number: PropTypes.string.isRequired,
   }),
+  deleteContact: PropTypes.func.isRequired,
 };
